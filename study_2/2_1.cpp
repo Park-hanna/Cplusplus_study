@@ -2,24 +2,24 @@
 #include <iostream>
 using namespace std;
 
-int study_1();
-int study_2_1();
-int study_2_2();
+int study_floating_point_error();
+int study_type_conversion_1();
+int study_type_conversion_2();
 
 int main() {
 
-	//study_1();
+	//study_floating_point_error();
 	cout << "\n";
-	study_2_1();
+	study_type_conversion_1();
 	cout << "\n";
-	study_2_2();
+	study_type_conversion_2();
 	cout << "\n";
 
 }
 
 
 // 부동 소수 점 방식으로 실수 표현시 발생할 수 있는 오차 예제
-int study_1() {
+int study_floating_point_error() {
 
 	int i;
 	float sum = 0;
@@ -49,7 +49,7 @@ int study_1() {
 	2) 변환할 타입 (변환할 데이터) // C++ 에서만 가능
 */ 
 
-int study_2_1() {
+int study_type_conversion_1() {
 
 	// 대입 연산시 묵시적 타입 변환
 	int num1 = 3.1415;
@@ -72,7 +72,7 @@ int study_2_1() {
 	return 0;
 }
 
-int study_2_2() {
+int study_type_conversion_2() {
 
 	// 명시적 타입 변환 
 	int num1 = 1;

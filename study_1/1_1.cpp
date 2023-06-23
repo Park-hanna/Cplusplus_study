@@ -14,22 +14,22 @@ cin -> 미리 정의 된 입력 stream object
 #include <iostream>
 using namespace std;
 
-int study_1();
-int study_2(int age);
-int study_3();
-int study_4();
+int study_in_out();
+int study_arithmetic(int age);
+int study_type();
+int study_decimal_point();
 
 int main() {
 
-	//int age = study_1();
+	//int age = study_in_out();
 	
-	//study_2(age);
+	//study_arithmetic(age);
 
-	study_3();
-	study_4();
+	study_type();
+	study_decimal_point();
 }
 
-int study_1()
+int study_in_out()
 {
 	int age;
 
@@ -74,7 +74,7 @@ symbolic constant : 선언과 동시에 초기화해야함
 
 */
 
-int study_2(int age) {
+int study_arithmetic(int age) {
 
 	cout << "number 10 = Decimal " << age << " , " << endl;
 	cout << oct;
@@ -103,7 +103,7 @@ auto keyword 이용 선언 : 변수 초기화시 특정 타입 명시 대신 사용가능
 	따라서, 복잡한 형식의 변수를 간단하게 선언 가능
 */
 
-int study_3() {
+int study_type() {
 
 	int num = 2147483647;
 	cout << "Integer Type\n";
@@ -116,7 +116,7 @@ int study_3() {
 	return 0;
 }	
 
-int study_4() {
+int study_decimal_point() {
 
 	auto num01 = 3.1415926535897932; //float type : 유효 자릿수는 소수점 6자리
 
