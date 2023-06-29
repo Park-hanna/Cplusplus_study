@@ -127,7 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="6_1.cpp" />
+    <ClCompile Include="6_enum.cpp" />
+    <ClCompile Include="6_struct_size.cpp" />
+    <ClCompile Include="6_struct_type.cpp" />
+    <ClCompile Include="6_func_and_struct_1.cpp" />
+    <ClCompile Include="6_func_and_struct_2.cpp" />
+    <ClCompile Include="6_func_and_struct_3.cpp" />
+    <ClCompile Include="6_main.cpp" />
+    <ClCompile Include="6_union.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

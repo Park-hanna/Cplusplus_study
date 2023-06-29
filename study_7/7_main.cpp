@@ -46,98 +46,13 @@ main() 함수의 인수 전달 : 프로그램 실행시 가장 먼저 자동 호출되는 함수
 #include <iostream>
 using namespace std;
 
-typedef double(*Arith)(double, double); //typedef 키워드 사용해 새로운 이름 선언
-
-double Calculator2(double, double, Arith);
-
-double Add(double, double);
-double Sub(double, double);
-double Mul(double, double);
-double Div(double, double);
-double Calculator(double, double, double (*func)(double, double));
-
 int study_func_pointer_1();
 int study_func_pointer_2();
 
 int main(void) {
 
 	study_func_pointer_1();
+	cout << "\n";
 	study_func_pointer_2();
-
+	cout << "\n";
 }
-
-int study_func_pointer_1() {
-
-	double (*calc)(double, double) = NULL; // def function pointer
-	double num1 = 3, num2 = 4, result = 0;
-	char oper = '*';
-
-	switch (oper) {
-
-	case '+' :
-		calc = Add;
-		break;
-
-	case '-':
-		calc = Sub;
-		break;
-
-	case '*':
-		calc = Mul;
-		break;
-
-	case '/':
-		calc = Div;
-		break;
-
-	default:
-		cout << "Only four arithmetic operations (+, -, *, /) are supported.";
-		break;
-	}	
-
-	result = Calculator(num1, num2, calc);
-	cout << "Four arithmetic operations result is " << result << "."<<endl;
-	return 0;
-}
-
-int study_func_pointer_2() {
-
-	Arith calc = NULL; //함수 포인터 선언
-	double num1 = 4, num2 = 5, result = 0;
-	char oper = '+';
-
-	switch (oper) {
-
-	case '+':
-		calc = Add;
-		break;
-
-	case '-':
-		calc = Sub;
-		break;
-
-	case '*':
-		calc = Mul;
-		break;
-
-	case '/':
-		calc = Div;
-		break;
-
-	default:
-		cout << "Only four arithmetic operations (+, -, *, /) are supported.";
-		break;
-	}
-
-	result = Calculator2(num1, num2, calc);
-	cout << "Four arithmetic operations result is " << result << "." << endl;
-	return 0;
-}
-
-double Add(double num1, double num2) { return num1 + num2; } 
-double Sub(double num1, double num2) { return num1 - num2; }
-double Mul(double num1, double num2) { return num1 * num2; }
-double Div(double num1, double num2) { return num1 / num2; }
-double Calculator(double num1, double num2, double (*func)(double, double)) { return func(num1, num2); }
-
-double Calculator2(double num1, double num2, Arith func) { return func(num1, num2); }

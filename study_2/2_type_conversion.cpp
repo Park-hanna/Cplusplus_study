@@ -1,22 +1,5 @@
-
 #include <iostream>
 using namespace std;
-
-int study_floating_point_error();
-int study_type_conversion_1();
-int study_type_conversion_2();
-
-int main() {
-
-	//study_floating_point_error();
-	cout << "\n";
-	study_type_conversion_1();
-	cout << "\n";
-	study_type_conversion_2();
-	cout << "\n";
-
-}
-
 
 // 부동 소수 점 방식으로 실수 표현시 발생할 수 있는 오차 예제
 int study_floating_point_error() {

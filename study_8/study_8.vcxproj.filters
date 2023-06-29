@@ -15,16 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7_main.cpp">
+    <ClCompile Include="8_main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="7_func_pointer_2.cpp">
+    <ClCompile Include="8_reference.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="7_func_pointer_1.cpp">
+    <ClCompile Include="8_default_argument.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="7_calc.cpp">
+    <ClCompile Include="8_func_overloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8_inline_func.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

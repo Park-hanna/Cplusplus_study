@@ -21,13 +21,6 @@ Memory Dynamic Allocation : 런타임에 메모리 할당받는 것
 	한 번 해제한 메모리 재해제 시도시 오류 발생	
 */
 
-int study_dynamic_allocation();
-
-int main() {
-
-	study_dynamic_allocation();
-}
-
 int study_dynamic_allocation() {
 
 	int* ptr_int = new int;

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3b2c2f28-f52f-48b3-8673-2cfbfd20b343}</ProjectGuid>
-    <RootNamespace>study7</RootNamespace>
+    <ProjectGuid>{e33439f4-e51b-4eb6-93e1-4be523a8a309}</ProjectGuid>
+    <RootNamespace>study8</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="7_calc.cpp" />
-    <ClCompile Include="7_func_pointer_2.cpp" />
-    <ClCompile Include="7_main.cpp" />
-    <ClCompile Include="7_func_pointer_1.cpp" />
+    <ClCompile Include="8_default_argument.cpp" />
+    <ClCompile Include="8_func_overloading.cpp" />
+    <ClCompile Include="8_inline_func.cpp" />
+    <ClCompile Include="8_main.cpp" />
+    <ClCompile Include="8_reference.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
